@@ -1,0 +1,474 @@
+html {
+    background-color: #2D2D2D;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "LemonMilk_Med"; /* Nom de la police */
+    src: url("fonts/Medium.otf"); /* Chemin vers le fichier de la police */
+}
+@font-face {
+    font-family: "LemonMilk_Ita"; /* Nom de la police */
+    src: url("fonts/Light_italic.otf"); /* Chemin vers le fichier de la police */
+}
+
+:root {
+    --left-margin: 90px;
+}
+
+.circle {
+    width: 865px; /* La largeur du cercle */
+    height: 865px; /* La hauteur du cercle */
+    border-radius: 50%; /* Rend l'élément en forme de cercle */
+    background-color: #F0482D; /* Couleur de fond du cercle */
+    position: fixed; /* Permet de positionner l'élément par rapport à la fenêtre */
+    bottom: -300px; /* Positionne le cercle en bas de l'écran tout en le faisant dépasser de 50 pixels */
+    right: -150px; /* Positionne le cercle à droite de l'écran tout en le faisant dépasser de 50 pixels */
+    transition: 0.4s;
+    z-index: 2;
+}
+
+#burgerImg {
+    position: fixed;
+    bottom: -30px;
+    right: 30px;
+    pointer-events: none;
+    user-select: none;
+    z-index: 3;
+    width: 600px;
+}
+
+#bkImg {
+    pointer-events: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;   
+}
+
+header ul li {
+    list-style: none;
+}
+
+header {
+    user-select: none;
+    margin-top: 40px;
+}
+
+h1 {
+    font-family: "LemonMilk_Med", sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-left: var(--left-margin);
+    margin-top: 215px;
+    margin-bottom: 28px;
+}
+
+p {
+    color: white;
+    font-family: "LemonMilk_Ita", sans-serif;
+    font-size: 20px;
+    width: 672px;
+    margin-left: var(--left-margin);
+    margin-bottom: 28px;
+    margin-top: 0px;
+}
+
+#add {
+    margin-left: var(--left-margin);
+    width: 214px;
+    height: 74px;
+    border-radius: 30px;
+    background-color: #F0482D;
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    transition: 0.4s;
+}
+
+#add:hover {
+    cursor: pointer;
+}
+
+#compo {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+.mainDiv {
+    text-align: center;
+}
+.dropdown1, .dropdown2, .dropdown3 {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.arrow {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 70px;
+    margin-top: 150px;
+}
+
+.bar {
+    background-color: #A6A6A6;
+    width: 864px;
+    height: 1px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: start;
+    margin-left: 20px;
+}
+
+h4 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bread {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.centerBreads {
+    display: flex;
+    justify-content: center;
+}
+
+.imgContent {
+    margin-top: 20px;
+}
+
+.infosNutri ul {
+    text-align: start;
+}
+.infosAllergenes ul {
+    text-align: start;
+}
+
+.icons, .iconsText {
+    display: flex;
+    gap: 100px;
+}
+
+#wheat {
+    margin-left: 23px;
+    width: 40px;
+}
+#eggs {
+    margin-left: 16px;
+}
+#mustard {
+    margin-left: -5px;
+    width: 100px;
+}
+#milk {
+    margin-left: 4px;
+    width: 55px;
+}
+
+.infosNutri ul li {
+    list-style: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.infosAllergenes ul li {
+    display: flex;
+    list-style: none;
+    color: white;
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.infosAllergenes {
+    margin-bottom: 40px;
+}
+
+.infos1 {
+    margin-left: 70px;
+}
+
+.infos {
+    display: flex;
+    gap: 70px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #989898;
+    font-size: 25px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.topText {
+    margin-left: 250px;   
+}
+
+#pourcent, #pourcent1 {
+    margin-left: 20px;
+}
+
+#lastOne, #lastOne1 {
+    margin-left: -75px;
+}
+
+#nextBtn {
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    border: none;
+    transition: 0.4s;
+    margin-top: 160px;
+    margin-bottom: 160px;
+    background-color: white;
+}
+
+#nextBtn:hover {
+    cursor: pointer;
+}
+
+#arrowImgNext {
+    margin-left: -5px;
+}
+
+#moreFood {
+    background-color: #424242;
+    width: 100%;
+    height: 648px;
+    overflow: hidden;
+}
+
+#moreText {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.mainFood{
+    padding-top: 90px;
+    padding-left: var(--left-margin);
+}
+
+.petitFaim-element {
+    width: 332px;
+    height: 379px;
+    background-color: #2D2D2D;
+    border-radius: 34px;
+    position: relative;
+}
+
+.petiteFaim {
+    display: flex;
+    gap: 70px;
+    margin-top: 40px;
+}
+
+#sundae {
+    width: 200px;
+    border-radius: 34px 0px 0px 34px;
+}
+
+h5 {
+    color: white;
+    font-size: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+#titleNuggets {
+    margin-left: 45px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+#titleSundae {
+    margin-left: 40px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    width: 200px;
+}
+#titleFusion {
+    margin-left: 35px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+#king_fusionImg {
+    margin-left: 100px;
+    pointer-events: none;
+}
+#nuggetsImg {
+    margin-top: 90px;
+    margin-left: 30px;
+    pointer-events: none;
+}
+#nuggetsSecond {
+    position: absolute;
+    left: 45px;
+    pointer-events: none;
+}
+#fritesImg {
+    margin-top: 60px;
+    margin-left: 30px;
+    pointer-events: none;
+}
+#cookieImg {
+    margin-top: 45px;
+    margin-left: 30px;
+    pointer-events: none;
+}
+#sundaeImg {
+    margin-left: 100px;
+    pointer-events: none;
+}
+
+.petitFaim-Btn {
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+}
+
+footer {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+
+.alignFooter {
+    display: flex;
+}
+
+h6 {
+    margin-top: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding-top: 150px;
+    padding-left: var(--left-margin);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-text {
+    color: black;
+}
+
+#maps {
+    border-radius: 27px;
+}
+
+.mapDiv {
+    margin-top: 22px;
+    width: fit-content;
+    height: fit-content;
+    border: 4px black solid;
+    border-radius: 27px;
+}
+
+.verticalBar {
+    width: 1px;
+    height: 588px;
+    background-color: #6D6D6D;
+}
+
+#contactBar {
+    margin-left: 270px;
+    margin-top: 80px;
+}
+
+
+.follow {
+    padding-top: 150px;
+    padding-left: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.reseaux {
+    display: flex;
+    gap: 30px;
+}
+#insta {
+    object-fit: contain;
+}
+#facebook {
+    object-fit: contain;
+}
+#twitter {
+    object-fit: contain;
+}
+#tiktok {
+    object-fit: contain;
+}
+.reseaux-button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.app {
+    margin-top: 30px;
+}
+
+#followTitle {
+    margin-bottom: 10px;
+}
+#googlePlay {
+    margin-bottom: 25px;
+}
+
+#legals {
+    font-size: 20px;
+    color: black;
+}
+
+#legals a {
+    text-decoration: underline;
+    color: black;
+}
+
+.bottomTextDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}

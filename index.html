@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steakhouse - Burger King</title>
+    <link rel="stylesheet" href="style.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap'); </style>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body>~
+    <div id="comebackTOP"></div>
+    <header>
+        <ul>
+            <img src="img/BK.svg" alt="burger king" id="bkImg">
+            <li><a href="#comebackTOP">Accueil</a></li>
+            <li><a href="#moreFood">Carte</a></li>
+            <li><a href="#">Promo</a></li>
+            <li><a href="#contact">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <h1>LE STEAKHOUSE</h1>
+        <p class="lorem">Le plaisir d'une viande de bœuf grillée à la flamme, d'une sauce barbecue, de bacon, des tranches de cheddar fondu et d'oignons croustillants.</p>
+        <button id="add" onclick="scrollToSection('compo')">Découvrir</button>
+    </section>
+
+    <div class="burger">
+        <div class="circle"></div>
+        <img src="img/steakhouse.png" alt="burger" id="burgerImg">
+    </div>
+
+    <div id="compo">
+        <div class="mainDiv">
+            <h2>A Propos du Steakhouse™</h2>
+            
+            <div class="bar"></div>
+            <div class="dropdown1">
+                <h3>Les ingrédients</h3>
+                <img src="img/arrow_down.svg" alt="arrow_down" class="arrow" id="firstArrow">
+            </div>
+
+            <!-- ingrédients carrousel -->
+            <div class="swiper-container swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                        <h4>Pains moelleux avec éclats de maïs</h4>
+                        <div class="centerBreads">
+                            <div class="bread">
+                                <img src="img/steakhouse/pain.png" alt="pain" width="200px" class="imgContent">
+                            </div>
+                        </div>
+                  </div>
+                  <div class="swiper-slide">
+                        <h4>Sauce Barbecue</h4>
+                        <img src="img/steakhouse/sauce1.png" alt="sauce" width="200px" class="imgContent">
+                  </div>
+                  <div class="swiper-slide">
+                        <h4>Salade ice berg</h4>
+                        <img src="img/steakhouse/salade.png" alt="salade" width="150px" class="imgContent">
+                  </div>
+                  <div class="swiper-slide">
+                        <h4>Tomates fraiches (x2)</h4>
+                        <img src="img/steakhouse/tomates.png" alt="tomates" width="200px" class="imgContent">
+                  </div>
+                  <div class="swiper-slide">
+                        <h4 style="margin-top: 80px;">Oignons croustillants</h4>
+                  </div>
+                  <div class="swiper-slide">
+                        <h4>Bacon fumé (x3)</h4>
+                        <img src="img/steakhouse/bacon.png" alt="tomates" width="250px" class="imgContent">
+                    </div>
+                  <div class="swiper-slide">
+                        <h4 style="margin-top: 80px;">Cheddar fondu (x2)</h4>
+                    </div>
+                  <div class="swiper-slide">
+                        <h4>Viande grillée à la flamme</h4>
+                        <img src="img/steakhouse/viande.png" alt="steak" width="200px" class="imgContent">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="bar"></div>
+            <div class="dropdown2">
+                <h3>Allergènes</h3>
+                <img src="img/arrow_down.svg" alt="arrow_down" class="arrow" id="secondArrow">
+            </div>
+            <div class="infosAllergenes">
+                <div class="infos1">
+                    <ul class="icons">
+                        <li><img src="img/wheat.svg" alt="wheat" id="wheat"></li>
+                        <li><img src="img/eggs.svg" alt="eggs" id="eggs"></li>
+                        <li><img src="img/sauces.svg" alt="mustard" id="mustard"></li>
+                        <li><img src="img/milk.svg" alt="milk" id="milk"></li>
+                    </ul>
+                    <ul class="iconsText">
+                        <li>Gluten</li>
+                        <li>Oeuf</li>
+                        <li>Moutard</li>
+                        <li>Lait</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bar"></div>
+            <div class="dropdown3">
+                <h3>Valeur nutritionnelles</h3>
+                <img src="img/arrow_down.svg" alt="arrow_down" class="arrow" id="thirdArrow">
+
+            </div>
+            <div class="infosNutri">
+                <div class="topText">
+                    <span>Par Portion</span>
+                    <span id="pourcent">Par 100%</span>
+                </div>
+                <div class="infos">
+                    <ul>
+                        <li>Valeur énergétiques :</li>
+                        <li>Matières grasses :</li>
+                        <li>Dont acides gras saturés :</li>
+                        <li>Protéines :</li>
+                        <li>Glucides :</li>
+                        <li>Dont sucres rapides :</li>
+                        <li>Sel :</li>
+                    </ul>
+                    <ul>
+                        <li>1367 kcal</li>
+                        <li>< 77.50 g</li>
+                        <li>< 32.10 g</li>
+                        <li>< 49.50 g</li>
+                        <li>< 120.5 g</li>
+                        <li>< 17.80 g</li>
+                        <li>5.220 g</li>
+                    </ul>
+                    <ul id="lastOne">
+                        <li>564 kcal</li>
+                        <li>< 31.50 g</li>
+                        <li>< 13.00 g</li>
+                        <li>< 19.30 g</li>
+                        <li>< 52.50 g</li>
+                        <li>< 6.900 g</li>
+                        <li>2.150 g</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bar"></div>
+            
+            <button id="nextBtn" onclick="scrollToSection('moreFood')">
+                <img src="img/Arrow-next.svg" id="arrowImgNext">
+            </button>
+        </div>
+    </div>
+
+    <div id="moreFood">
+        <div class="mainFood">
+            <h4 id="moreText">Encore une petite faim ?</h4>
+
+            <div class="petiteFaim">
+                <div id="fusion" class="petitFaim-element">
+                    <h5 id="titleFusion">KING FUSION au Nutella®</h5>
+                    <img src="img/king fusion.png" alt="fusion" id="king_fusionImg">
+                    <button id="add" class="petitFaim-Btn" onclick="scrollToSection('comebackTOP')">Découvrir</button>
+                </div>
+                <div id="nuggets"class="petitFaim-element">
+                    <h5 id="titleNuggets">KING NUGGETS®</h5>
+                    <img src="img/nuggets_overlay.png" id="nuggetsSecond">
+                    <img src="img/nuggets.png" alt="nuggets" id="nuggetsImg">
+                    <button id="add" class="petitFaim-Btn" onclick="scrollToSection('comebackTOP')">Découvrir</button>
+                </div>
+                <div id="frites" class="petitFaim-element">
+                    <h5 id="titleFusion">King Fries <br>Cheese & Bacon</h5>
+                    <img src="img/frites.png" id="fritesImg">
+                    <button id="add" class="petitFaim-Btn" onclick="scrollToSection('comebackTOP')">Découvrir</button>
+                </div>
+                <div id="cookie" class="petitFaim-element">
+                    <h5 id="titleFusion">Cookie Duo Chocolat</h5>
+                    <img src="img/cookie.png" id="cookieImg">
+                    <button id="add" class="petitFaim-Btn" onclick="scrollToSection('comebackTOP')">Découvrir</button>
+                </div>
+                <div id="sundae" class="petitFaim-element">
+                    <h5 id="titleSundae">King Sundae Caramel</h5>
+                    <img src="img/sundae.png" id="sundaeImg">
+                    <button id="add" class="petitFaim-Btn" onclick="scrollToSection('comebackTOP')">Découvrir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="alignFooter">
+            <div id="contact">
+                <h6>Nous contacter ?</h6>
+                <span class="contact-text">Téléphone : <span style="color: #F0482D;">04 98 09 29 74</span></span>
+                <span class="contact-text">Mail : <span style="color: #F0482D;">service.conso@burgerking.fr</span></span>
+                <span style="color: #F0482D;">RD 562 Lieudit, La Foux, 83720 Trans-en-Provence</span>
+    
+                <div class="mapDiv">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1446.7085283863923!2d6.477108667041906!3d43.514495071557015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ceadd4740b8eaf%3A0x60140fb0bd606e31!2sBurger%20King!5e0!3m2!1sfr!2sfr!4v1680340548564!5m2!1sfr!2sfr" width="577" height="220" style="border:0;" allowfullscreen="yes" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="maps"></iframe>
+                </div>
+            </div>
+            <div class="verticalBar" id="contactBar"></div>
+            <div class="follow">
+                <h6 id="followTitle">Qui nous aime, nous suive !</h6>
+                <div class="reseaux">
+                    <button class="reseaux-button" onclick='openTab("https://www.instagram.com/burgerkingfr/")'>
+                        <img src="img/reseau/Instagram.png" id="insta">
+                    </button>
+                    <button class="reseaux-button" onclick='openTab("https://www.facebook.com/burgerkingfranceofficiel/")'>
+                        <img src="img/reseau/facebook.png" id="facebook">
+                    </button>
+                    <button class="reseaux-button" onclick='openTab("https://twitter.com/BurgerKingFR")'>
+                        <img src="img/reseau/twitter.png" id="twitter">
+                    </button>
+                    <button class="reseaux-button" onclick='openTab("https://www.tiktok.com/@burgerkingfr")'>
+                        <img src="img/reseau/tiktok.png" id="tiktok">
+                    </button>
+                </div>
+                <div class="app">
+                    <h6>Le King dans votre poche</h6>
+                    <button class="reseaux-button" onclick='openTab("https://play.google.com/store/apps/details?id=air.com.unit9.bkFrApp")'>
+                        <img src="img/reseau/Google Play.svg" id="googlePlay">
+                    </button>
+                    <button class="reseaux-button" onclick='openTab("https://apps.apple.com/fr/app/burger-king-france/id924879230")'>
+                        <img src="img/reseau/App store.png" id="appStore">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="bottomTextDiv">
+            <span id="legals">
+                <a href="https://www.burgerking.fr/page/mentions-legales">
+                    Mentions légales - CGU</a>
+                | 
+                <a href="https://www.burgerking.fr/page/cgv">CGV</a>
+                | 
+                <a href="https://www.burgerking.fr/page/donnees-personnelles">Politique de protection des données personnelles</a>
+                |
+                <a href="https://www.burgerking.fr/page/cookies">Cookies</a>
+                <br>
+                Pour votre santé, mangez au moins cinq fruits et légumes par jour. <a href="https://www.mangerbouger.fr/"> www.mangerbouger.fr</a></span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
