@@ -455,6 +455,21 @@ h6 {
 }
 #googlePlay {
     margin-bottom: 25px;
+    transition: 0.2s;
+}
+
+#googlePlay:hover {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+#appStore {
+    transition: 0.2s;
+}
+
+#appStore:hover {
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 
 #legals {
